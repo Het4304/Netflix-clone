@@ -780,7 +780,6 @@ This project demonstrates the deployment of a Netflix Clone application as a Doc
 7. [Screenshots](#screenshots)
 8. [Best Practices](#best-practices)
 9. [Future Scope](#future-scope)
-10. [Contact](#contact)
 
 ---
 
@@ -888,16 +887,13 @@ Using Helm charts, deploy the application:
 ### 1. **Detail Modal**
 ![Detail Modal](/Images/detail-modal.png)
 
-### 2. **DevSecOps Pipeline Overview**
-![DevSecOps Pipeline](/Images/DevSecOps.png)
-
-### 3. **Grid View by Genre**
+### 2. **Grid View by Genre**
 ![Grid View by Genre](/Images/grid-genre.png)
 
-### 4. **Watch Interface**
+### 3. **Watch Interface**
 ![Watch Interface](/Images/watch.png)
 
-### 5. **Mini Portal**
+### 4. **Mini Portal**
 ![Mini Portal](/Images/mini-portal.png)
 
 ---
