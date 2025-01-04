@@ -800,10 +800,7 @@ The **DevSecOps Netflix Clone Application** combines secure development, contain
 
 ---
 
-## 🛠 Tech Stack
-- **Frontend**: React.js  
-- **Backend**: Node.js, Express.js  
-- **Database**: MongoDB  
+## 🛠 Tech Stack  
 - **Containerization**: Docker  
 - **Orchestration**: Kubernetes (AWS EKS)  
 - **CI/CD**: Jenkins  
@@ -824,6 +821,7 @@ The **DevSecOps Netflix Clone Application** combines secure development, contain
 2. **Tools Required**:
    - Docker
    - Kubernetes (kubectl, AWS EKS)
+   - AWS Cli
    - Helm
    - Jenkins
 
@@ -831,7 +829,10 @@ The **DevSecOps Netflix Clone Application** combines secure development, contain
 
 ## 🚀 Setup & Installation
 
-### Step 1: Clone the Repository
+## Image of the Netflix clone can be found on the dockerhub 
+    - clouddeveloper45/netflix:latest
+
+### Step 1: Clone the Repository For the Kubernetes File 
 ```bash
 git clone https://github.com/your-repo-link
 cd your-repo-name
@@ -852,7 +853,9 @@ docker run -e TMDB_API_KEY=$TMDB_API_KEY -p 3000:3000 netflix-clone
 ### Step 4: Deploy on Kubernetes
 Using Helm charts, deploy the application:
 ```bash
-helm install netflix-clone ./helm-chart
+    helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+    kubectl create namespace prometheus-node-exporter
+    helm install prometheus-node-exporter prometheus-community/prometheus-node-exporter --namespace prometheus-node-exporter
 ```
 
 ### Step 5: Set Up Jenkins Pipeline
@@ -867,10 +870,12 @@ helm install netflix-clone ./helm-chart
 ---
 
 ## 🎯 Usage
-1. Access the application via the ELB URL:
+1. Access the application via the Node-IP URL:
    ```
-   http://<ELB-DNS>:3000
+   http://<node-ip>:30007
    ```
+
+
 2. Features:
    - **Browse Movies**: View a catalog of movies and TV shows.
    - **Search by Genre**: Filter content by genre.
@@ -881,16 +886,19 @@ helm install netflix-clone ./helm-chart
 ## 📸 Screenshots
 
 ### 1. **Detail Modal**
-![Detail Modal](./images/detail-modal.png)
+![Detail Modal](/Images/detail-modal.png)
 
 ### 2. **DevSecOps Pipeline Overview**
-![DevSecOps Pipeline](./images/devsecops-pipeline.png)
+![DevSecOps Pipeline](/Images/DevSecOps.png)
 
 ### 3. **Grid View by Genre**
-![Grid View by Genre](./images/grid-genre.png)
+![Grid View by Genre](/Images/grid-genre.png)
 
 ### 4. **Watch Interface**
-![Watch Interface](./images/watch-interface.png)
+![Watch Interface](/Images/watch.png)
+
+### 5. **Mini Portal**
+![Mini Portal](/Images/mini-portal.png)
 
 ---
 
