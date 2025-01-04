@@ -896,6 +896,19 @@ Using Helm charts, deploy the application:
 ### 4. **Mini Portal**
 ![Mini Portal](/Images/mini-portal.png)
 
+### 5. **ArgoCD**
+![Argo CD](/Images/ArgoCD.png)
+
+### 6. **Grafana**
+![Grafana 1](/Images/Grafana%20Dashboard-1.png)
+![Grafana 2](/Images/Grafana%20Dashboard-2.png)
+
+### 7. **Jenkins**
+![Jenkins](/Images/Jenkins.png)
+
+### 8. **EKS**
+![EKS Node Capacity](/Images/EKS%20Node%20Capacity%20Status.png)
+![EKS Node](/Images/EKS.png)
 ---
 
 ## 🛡 Best Practices
