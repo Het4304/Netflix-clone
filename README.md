@@ -752,15 +752,7 @@ To deploy an application with ArgoCD, you can follow these steps, which I'll out
 4. **Access your Application**
    - To Access the app make sure port 30007 is open in your security group and then open a new tab paste your NodeIP:30007, your app should be running.
 
-**Phase 7: Cleanup**
 
-1. **Cleanup AWS EC2 Instances:**
-    - Terminate AWS EC2 instances that are no longer needed. -->
-
-
-
-
-Here’s an updated `README.md` with generated placeholder paths for your images, instructions for TMDB API setup, and enhanced content:  
 
 ---
 
